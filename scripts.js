@@ -1,4 +1,4 @@
-const localStorageKey = 'malligson'
+const localStorageKey = 'to-do-list-gn'
 
 function validateIfExistsNewTask() {
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
@@ -34,7 +34,7 @@ function newTask() {
 
 function showValues() {
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
-    let list = document.getElementById('to-do-list')
+    let list = document.getElementById('malligson')
     list.innerHTML = ''
     for (let i = 0; i < values.length; i++) {
         if (values[i].deleted) {
