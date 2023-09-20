@@ -1,4 +1,4 @@
-const localStorageKey = 'to-do-list-gn'
+const localStorageKey = 'malligson'
 
 function validateIfExistsNewTask() {
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
